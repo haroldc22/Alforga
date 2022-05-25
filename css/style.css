@@ -7,14 +7,14 @@ nav{
     background: #000;
     display: flex;
     justify-content: space-between;
-    height: 18vh;
+    height: 15vh;
 }
 .navbar{
     width: 70%;
     display: flex;
     justify-content: space-around;
     margin: 0 20%;
-    padding: 10px;
+    padding: 20px;
 }
 .navbar a{
     color: rgb(255, 255, 255);
@@ -22,7 +22,7 @@ nav{
     margin-top: 35px;
 }
 .navbar a:hover{
-    background: rgba(255, 255, 255, 0.281);
+    color: #90a0db;
 }
 .logo{
     width: 90px;
@@ -35,6 +35,7 @@ img{
 }
 #panel{
     margin: 10px;
+    padding: 10px;
 }
 #logo{
     width: 30%;
@@ -43,6 +44,7 @@ b{
     color: #fed95c;
     font-family: "Cantora One", "Source Sans Pro", _fb_;
     font-size: 79.1733px;
+    margin: 5%;
 }
 .svg-item{
     margin: 0px;
@@ -53,7 +55,7 @@ b{
     display: inherit;
     height: 100%;
     width: 100%;
-    left: 23%;
+    left: 24%;
     top: 23%;
     width: 134.317px;
     height: 134.317px;
