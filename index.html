@@ -4,35 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alforga</title>
     <link rel="stylesheet" href="./css//style.css">
+    <title>Alforga</title>
     <link rel="shortcut icon" href="https://img.genial.ly/62681ee18ecc89001156e090/c4616411-3198-40f9-ab43-2b68a92d717e.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
-    <header>
-        <center>
-            <nav>
-                <div class="navbar">
-                   <a href="/">Inicio</a>
-                    <a href="/pages/login.html">Registrarse</a>
-                    <a href="/pages/informacion.html">Informacion</a>
-                    <a href="/pages/institucion.html">institucion</a>
-                    <a href="/pages/docente.html">Docente</a>
-                    <a href="/pages/listado.html">listado</a> 
-                </div>
-                <img src="https://img.genial.ly/62681ee18ecc89001156e090/c4616411-3198-40f9-ab43-2b68a92d717e.png" alt="colegio" class="logo">
-            </nav>
-        </center>
-        <div id="mostrar">
-            <center>
-            <img src="/img/ie honduras.jpg" alt=""><br>
-            <div class="d-flex">
-                <img src="/img/i.e republica de honduras1.png" alt="">
-                <img src="/img/filter.png" alt="">
-                <img src="/img/github.png" alt="">
-            </div>
-        </center>
+    <nav>
+        <div class="navbar">
+            <a href="/">Inicio</a>
+            <a href="./pages/login.html">Registrarse</a>
+            <a href="/pages/informacion.html">Informacion</a>
+            <a href="/pages/institucion.html">institucion</a>
+            <a href="/pages/docente.html">Docente</a>
+            <a href="/pages/listado.html">listado</a> 
         </div>
-    </header>
+        <img src="https://img.genial.ly/62681ee18ecc89001156e090/c4616411-3198-40f9-ab43-2b68a92d717e.png" alt="colegio" class="logo">
+    </nav>
+    <div id="panel">
+        <div style="display: flex;">
+        <div class="oneBlock">
+            <img src="https://images.genial.ly/genially/layouts/0bfa5b1e-bca1-482a-8ac4-41585cb4ec9a.gif" alt="" style="position: relative; transform: rotate(0deg);" id="logo"/>
+            <div class="svg-item">
+                <b id="Alf">Alf</b>
+            </div>
+                </svg>
+        </div>
+        <div class="twoBlock">
+            <h1 id="alf">ALFORGA</h1>
+            <i>"Organizacion de alfabetizacion"</i>
+            <div class="container">
+                <span onclick="LeftSlider();" class="material-icons slider" style="font-size: 40px;">chevron_left</span>
+                <div id="carousel">
+                    <img style="margin: 0;" class="carousel" src="/img/ie_honduras.jpg" alt="">
+                </div>
+                <span onclick="RightSlider();" class="material-icons slider" style="font-size: 40px;">chevron_right</span>
+            </div>
+            </div>
+        </div>
+        <div class="threeBlock">
+            <h1>Acerca de.</h1>
+            <p>
+                Alforga es un organizador de alfabetizacion el cual busca la comodidad tanto de los estudiantes,
+                como de los maestros, haciendo que se deje de usar el papel y la tinta y se pase a utilizar un 
+                sistema virtual el cual ayude a los estudiantes de los grados 11° y 10°, puedan encontrar un profesor,
+                ya sea de la sede principal o la sede de la rosa. El usuario podra ver que profesoras no tiene alfabetizadores
+                y una breve informacion de el profesor, del mismo modo los profesores podran ver que alfabetizadores estan
+                disponibles. Tambien abran paneles que simularan los perfiles de estudiantes y profesores, en el perfil de los
+                profesores se encontrara el estado, jornada, grado y los comentarios, en el de los usuarios se visualizara las horas,
+                los grupos y los profesores disponibles.
+            </p>
+        </div>
+    </div>
+    <div class="foot">
+        <footer >
+            <h2 style="margin-bottom: 6px;">Harold castaño Alforga ©2022</h2>
+            <i>Carlos delgado •Estefania muñoz •Yeraldin castaño •Yurley guerra</i>
+        </footer>
+    </div>
+    <script src="./index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>

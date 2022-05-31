@@ -1,34 +1,197 @@
+*{
+    margin: 0;
+}
 body{
     background: #90a0db;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
 }
 nav{
     background: #000;
     display: flex;
     justify-content: space-between;
-    
+    height: 20%;
+    padding: 0 14px 18px;
 }
 .navbar{
-    width: 70%;
+    width: 55%;
     display: flex;
     justify-content: space-around;
-    margin: 0 20%;
-    padding: 20px;
-
+    margin: 0 0 0 20%;
+    padding: 10px;
+}
+@font-face{
+    font-family: niagato;
+    src: url("/css/Niagato.ttf");
+    font-weight: fold;
 }
 .navbar a{
     color: rgb(255, 255, 255);
     text-decoration: none;
+    margin-top: 35px;
+    font-family: niagato;
+    font-size: 25px;
+    margin-left: 0px;
 }
 .navbar a:hover{
-    background: rgba(255, 255, 255, 0.281);
+    color: #90a0db;
 }
 .logo{
     width: 90px;
     height: 80px;
+    margin-top: 15px;
 }
 img{
     width: 230px;
-    margin: 0% 5% 0 2%;
+    margin: 0% 0% 0 2%;
+}
+#panel{
+    height: auto;
+}
+#logo{
+    width: 60%;
+}
+#Alf{
+    color: #fed95c;
+    font-family: "Cantora One", "Source Sans Pro", _fb_;
+    font-size: 79.1733px;
+    margin: 5%;
+}
+.svg-item{
+    margin: 0px;
+    padding: 20px 10px 0 10px;
+    border: 0px;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    display: inherit;
+    height: 100%;
+    width: 100%;
+    left: 24%;
+    top: 23%;
+    width: 134.317px;
+    height: 134.317px;
+    position: absolute;
+    transform: rotate(0deg);
+    z-index: 14;
+    background: #000;
+    border-radius: 100%;
+}
+.forms{
+    background: #000;
+    margin: 0 30%;
+    height: 80vh;
+    padding: 15px 25px 5px 25px;
+    border-radius: 5%;
+}
+label{
+    font-family: fantasy;
+    color: #d2ff0a;
+    font-size: 40px;
+}
+form{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 15% 10%;
+}
+input{
+    height: 37px;
+}
+button{
+    width: 100%;
+    height: 43px;
+    background: #d2ff0a;
+    border-radius: 5%;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 0 16px;
+    line-height: 48px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.oneBlock{
+    width: 50%;
+    margin: 10px 10px 25px 10px;
+    padding: 8px;
+}
+.twoBlock{
+    width: 50%;
+}
+#title{
+    font-size: 50px;
+    color: #FFF;
+}
+.foot{
+    background: #000;
+    height: 20.6%;
+    position: sticky;
+    top: 100%;
+    color: #FFF;
+    text-align: center;
+    padding: 2%;
+}
+#alf{
+    font-family: system-ui;
+    color: #fbff0a;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+.twoBlock > i{
+    position: relative;
+    left: 31%;
+    color: #FFF;
+}
+.threeBlock{
+    background: rgb(37, 37, 37);
+    padding: 2%;
+}
+.threeBlock > h1{
+    text-align: center;
+    font-family: niagato;
+    margin-bottom: 38px;
+    font-size: 35px;
+}
+#usuario, #password{
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 14px 16px;
+    height: 22px;
+    line-height: 16px;
+}
+.form{
+    border-bottom: .7px solid rgb(71, 71, 71);
+    height: 75%;
+}
+#panel > div{
+    padding: 2% 0;
+}
+.container{
+    text-align: center;
+    margin: 60px 0 0 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 14%;
+}
+#carousel{
+    width: 350px;
+    height: 100%;
+}
+.carousel{
+    height: auto;
+    width: 350px;
+    vertical-align: middle;
+    margin: 0 8px 0 8px;
+}
+.slider{
+    cursor: pointer;
+}
+.slider:hover{
+    color: #FFF;
 }
