@@ -5,7 +5,11 @@ window.onload = function(){
         e.preventDefault();
         let email = document.getElementById('usuario');
         let mostrar = document.getElementById('mostrar');
+<<<<<<< HEAD
         mostrar.innerHTML += "<h2 style='display: inline'>Usuario: </h2>" + email.value + "<br />";
+=======
+        mostrar.innerHTML += "<h2 style='display: inline'>Usuario: </h2>" + email.value + <br />;
+>>>>>>> 457ebbe5ffeb7423a29f2991548f5580245b9904
     })
 }
 let imges = [
