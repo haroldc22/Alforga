@@ -1,13 +1,14 @@
 body {background:#90a0db;
-color: #fff;
-font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif{
-
-    [
-        
-    ]
-};
+    color: #fff;
 }
-
+@font-face{
+    font-family: walter;
+    src: url(/fonts/Dunkin.otf);
+}
+@font-face{
+    font-family: sunmora;
+    src: url(/fonts/Sunmora-Bold.ttf);
+}
 .menu{
     background: black;
     padding: 0;
@@ -20,7 +21,6 @@ font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif{
     left: 0%;
     text-align: center;
 }
-
 .menu a{
     color: whitesmoke;
     background-color: black;
@@ -29,48 +29,28 @@ font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif{
     display: inline-block;
     text-decoration: none;
    padding: 12px 10px;
+   font-size: 16px;
+   font-family:walter ;
 }
-
 .menu a:hover {
     background: #90a0db;
 }
-
-h2 {
-    font-size: 15px;
-}
-
-
 .logo{
     width: 90px;
     height: 80px;
     border-radius: 100%;
     float: left;
 }
-
 nav img{
     width: 90px;
     height: 80px;
     border-radius: 100%;
-    float: right;}
-img {
-    width: 400px;
+    float: right;
 }
 
-div {
 
-    font-size: 25px;
-    text-align: center;
-}
 table{
     width: 1000px;
+    font-style: normal;
+    font-family:sunmora;
 }
-td, img {
-    width: 500;
-    height: 500;
-}
-/*  */
-/* footer {
-    background-color: #fff;
-    color: black;
-    text-align: center;
-} */

@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alforga</title>
-    <link rel="shortcut icon" href="/Imagenes/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    
+    
 </head>
 <body>
     <header>
@@ -16,32 +19,70 @@
               <a href="/">Inicio</a>
               <a href="/pages/registrarse.html" target="_blank">Registrarse</a>
               <a href="/pages/informacion.html" target="_blank">Información</a>
-              <a href="/pages/docentes.html" target="_blank"> Docentes</a>
-              <a href="/pages/contacto.html" target="_blank"> Contactenos</a>
-              <img src="/Imagenes/ESCUDO REPUBLICA.jpg" alt="">
+               <a href="/pages/docentes.html" target="_blank"> Docentes</a>
+               <a href="/pages/nosotros.html" target="_blank">Nosotros</a>
+              <img src="/img/ESCUDO REPUBLICA.jpg" alt="">
               
         </nav>
+<br><br> <br>
+        <div id="titulo">
+            <span class="titulo1">Alforga</span>
+            <br>
+            <span class="titulo2"> "Organizacion de alfabetización"</span>
+        </div>
+
     </header>
-    <br><br><br>
-    <table > 
+    <br>
+    <table class="tabla" > 
         <tr >
             <td>
-              <img src="/Imagenes/0bfa5b1e-bca1-482a-8ac4-41585cb4ec9a.gif"/> <img href="/" src="/Imagenes/logo.png" alt="" class="logo">
+              <img src="/img/0bfa5b1e-bca1-482a-8ac4-41585cb4ec9a.gif"/> <img href="/" src="/img/logo.png" alt="" class="logo">
               <br><br><br>
             
             <td  >
-                <h1><label style="color:white ;">Ingresa</label></h1> 
-                <br>
-                <input width="50px" type="text" placeholder="Usuario, Correo Electronico, Numero..." id="txtUsuario">
-                <br><br><br>
-                <input type="password" placeholder="Contraseña" >
-                <br><br><br>
-                <button id="btnContinuar">Continuar</button></td>
+                <form action=""> 
+            <fieldset>
+                <center>
+               <h1> <Legend>Ingresar</Legend></h1>
+               
+                <input width="100px" type="text" placeholder="👤 Usuario*" required  id="txtNombres">
+                <br> <br>
+                <input type="password" placeholder="🔓 Contraseña*" required  >
+                <br><br>
+                <!-- <a href="/pages/docentes.html" target="_blank"></a> -->
+                <button class="boton" id="btnContinuar"  onmouseover="mueveElBoton()">Continuar</button><br><br>
+                <!-- <script>
+                    function mueveElBoton(){
+                        width = window.innerWidth;
+                        height = window.innerHeight;
+            
+                        newWidth = (Math.random () * width);
+                        newHeight = (Math.random () * height);
+            
+                        document.getElementById("btnContinuar").style.position = "absolute";
+                        document.getElementById("btnContinuar").style.left = newWidth + "px";
+                        document.getElementById("btnContinuar").style.top = newHeight + "px";
+                    }
+                    </script> -->
+                <p>¿No tienes cuenta? <a href="/pages/registrarse.html" style="text-decoration: none; color: wheat;">Registrate</a></p></center></td>
+            </fieldset>
+            </form>
             </tr>
+        </table>
+        <br><br>
+
+        <div id="Mostrar">
+
+        </div>
+        <script src="/js/login.js"></script>
+
+        <a href="https://api.whatsapp.com/send?phone=573005758109" class="btn-wsp" target="_blank">
+            <i class="icon-wsp"></i>
+        </a>
 
 </body>
-<!-- <footer class="bg-light d-flex" style="position: sticky; top: 100%; height: 15vh; flex-flow: column; justify-content: center;">
-    <h2 class="text-darkt text-center">Alforga Education ©2022</h2>
-    <i class="text-primary text-center">•Carlos Delgado •Yeraldin Castaño •Estefania Muñoz •Yurley Guerra •Harold Castaño  </i>
-</footer> -->
+<footer class="ref" >
+    <h2>Alforga Education ©2022</h2>
+    <i >•Carlos Delgado •Yurley Guerra •Yeraldin Castaño •Estefania Muñoz •Harold Castaño  </i>
+</footer>
 </html>
