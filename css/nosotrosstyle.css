@@ -6,8 +6,8 @@ body {background:#90a0db;
     src: url(/fonts/Dunkin.otf);
 }
 @font-face{
-    font-family: sunmora;
-    src: url(/fonts/Sunmora-Bold.ttf);
+    font-family:Retrochips ;
+    src: url(/fonts/Retrochips.otf);
 }
 .menu{
     background: black;
@@ -47,10 +47,18 @@ nav img{
     border-radius: 100%;
     float: right;
 }
-
+h1{
+    font-size: 35px;
+    color: bisque;
+}
+p{
+    font-size: 30px;
+    color: bisque;
+    font-family: sunmora;
+}
 
 table{
     width: 1000px;
     font-style: normal;
-    font-family:sunmora;
+    font-family:Retrochips;
 }

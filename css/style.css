@@ -2,6 +2,10 @@
 color: #fff;
 }
 @font-face{
+    font-family: cantora;
+    src: url(/fonts/CantoraOne-Regular.ttf);
+}
+@font-face{
     font-family:Retrochips ;
     src: url(/fonts/Retrochips.otf);
 }
@@ -108,8 +112,9 @@ button:hover {
     background-color: #fff;
     color: black;
     padding: 5px;
-    font-family: sans-serif;
+    font-family: cantora;
     margin-top: 150px;
+
 }
 
 .titulo {
@@ -121,12 +126,12 @@ button:hover {
     color: #fed95c;
     font-size: 70px;
     text-align: left;
-    font-family:letra1 ;
+    font-family:cantora ;
 }
 
 .titulo2 { 
     color: white;
-    font-family:letra1;
+    font-family:cantora;
 }
 
 fieldset {
@@ -136,11 +141,11 @@ fieldset {
     width: 400px;
 }
 fieldset p{
-    font-family: walter;
+    font-family: cantora;
 }
  legend {
      font-size: 40px;
-     font-family: Retrochips;
+     font-family: cantora;
  }
 
  .boton {
@@ -182,4 +187,13 @@ fieldset p{
  i {
      color: black;
  }
- 
+ select, option{
+    width: 210px;
+    height: 30px;
+}
+.logoo{
+    width: 90px;
+    height: 80px;
+    border-radius: 100%;
+    float: left;
+}
