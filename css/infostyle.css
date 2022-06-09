@@ -76,7 +76,7 @@ video{
 .introduccion{
     font-size: 20px;
     text-align: justify;
-    align-items: center;
+    text-align:  center;
 }
 .objetivos{
     font-size:30px ;
@@ -85,4 +85,5 @@ video{
 .obj{
     font-size:20px ;
     text-align: justify;
+    text-align: center;
 }

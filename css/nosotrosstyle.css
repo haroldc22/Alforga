@@ -41,6 +41,27 @@ body {background:#90a0db;
     border-radius: 100%;
     float: left;
 }
+.ref {
+    text-align: center;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    align-items: center;
+    height: 70px; 
+    background-color: #fff;
+    color: black;
+    padding: 5px;
+    font-family: cantora;
+    margin-top: 150px;
+
+}
+h2 {
+    font-size: 15px;
+}
+@font-face{
+    font-family: cantora;
+    src: url(/fonts/CantoraOne-Regular.ttf);
+}
 nav img{
     width: 90px;
     height: 80px;
@@ -55,12 +76,10 @@ nav img{
     margin: 20px;
     display: inline-block;
     align-items: center;
-    cursor: pointer;
+   
     font-family: walter;
 }
-.card:hover{
-    transform: translateY(-10px);
-}
+
 .card img{
     width: 100%;
     height: 250px;
@@ -79,4 +98,7 @@ h1{
 p{
     font-size: 20px;
     font-family: walter;
+}
+h4{
+    font-size: 25px;
 }
