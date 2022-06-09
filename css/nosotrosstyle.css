@@ -3,7 +3,7 @@ body {background:#90a0db;
 }
 @font-face{
     font-family: walter;
-    src: url(/fonts/Dunkin.otf);
+    src: url(/fonts/Philosopher-Regular.ttf);
 }
 @font-face{
     font-family:Retrochips ;
@@ -30,7 +30,7 @@ body {background:#90a0db;
     text-decoration: none;
    padding: 12px 10px;
    font-size: 16px;
-   font-family:walter ;
+   font-family:retrochips ;
 }
 .menu a:hover {
     background: #90a0db;
@@ -47,18 +47,36 @@ nav img{
     border-radius: 100%;
     float: right;
 }
+.card{
+    background-color: darkslategray;
+    border-radius: 8px;
+    box-shadow: 0 12px 16px black;
+    width: 250px;
+    margin: 20px;
+    display: inline-block;
+    align-items: center;
+    cursor: pointer;
+    font-family: walter;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card img{
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+}
+.card a{
+    text-decoration: none;
+    color: wheat;
+    font-weight: bold;
+    font-family: walter;
+}
 h1{
-    font-size: 35px;
-    color: bisque;
+    font-family: Arial;
+    font-size: 17px;
 }
 p{
-    font-size: 30px;
-    color: bisque;
-    font-family: sunmora;
-}
-
-table{
-    width: 1000px;
-    font-style: normal;
-    font-family:Retrochips;
+    font-size: 20px;
+    font-family: walter;
 }

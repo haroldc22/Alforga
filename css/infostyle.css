@@ -69,3 +69,20 @@ h2 {
 video{
     width: 600px;
 }
+.intro{
+    font-size: 30px;
+    text-align: center;
+}
+.introduccion{
+    font-size: 20px;
+    text-align: justify;
+    align-items: center;
+}
+.objetivos{
+    font-size:30px ;
+    text-align: center;
+}
+.obj{
+    font-size:20px ;
+    text-align: justify;
+}
