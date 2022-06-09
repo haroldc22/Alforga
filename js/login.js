@@ -9,5 +9,5 @@ function  clickboton(e){
    let usuario = document.getElementById('txtNombres').value;
    let mostrarDatos = document.getElementById('Mostrar');
 
-   mostrarDatos.innerHTML += "Bienvenido: " + usuario + "<br>"
+   mostrarDatos.innerHTML += "Bienvenido: " + usuario + " Ingresó el: "+ Date() + "<br>"
 }
