@@ -20,15 +20,23 @@ body{background-color: #90a0db;
     font-family: sunmora;
     src: url(/fonts/Sunmora-Bold.ttf);
 }
+@font-face{
+    font-family: cantora;
+    src: url(/fonts/CantoraOne-Regular.ttf);
+}
 p {
-    color: yellow;
-    font-family: sunmora;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
 }
 
-h4{color: white; font-family: sunmora;}
+h4{color: white;}
 
 small, a{
-text-decoration: none;}
+text-decoration: none;
+font-family: sans-serif ;
+font-size: 15px;
+}
 select, option{
     width: 210px;
     height: 30px;
@@ -65,7 +73,7 @@ fieldset {
     width: 600px;
 }
  h1 {
-     font-size: 40px;
+     font-size: 25px;
      color: burlywood;
      font-family: sunmora;
  }
@@ -124,7 +132,7 @@ img {
     flex-flow: column; 
     background-color: #fff;
     color: black;
-    margin-top: 120px;
+    margin-top: 180px;
     
     padding: 3px;
     font-size: 15px;
