@@ -117,10 +117,15 @@ button{
 .boton {
     background-color: blue;
     width: 70px;
-    height: 20px;
-    font-size: 17px;
+    height: 22px;
+    font-size: 18px;
     color: white;
     border-radius: 6px;
     border-color: #90a0db;
+    align-content: center;
+}
+.iniciar{
     text-align: center;
+    text-decoration: none;
+    color: #fff;
 }
