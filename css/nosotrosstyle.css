@@ -93,9 +93,7 @@ nav img{
     font-weight: bold;
     font-family: walter;
 }
-.card:hover{
-   transform: translateY(-10px);
-}
+
 h1{
     font-family: Arial;
     font-size: 17px;
