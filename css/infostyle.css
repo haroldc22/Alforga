@@ -1,0 +1,118 @@
+body {
+    background-color: #90a0db;
+}
+@font-face{
+    font-family:Retrochips ;
+    src: url(/fonts/Retrochips.otf);
+}
+.menu{
+    background: black;
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    display: block;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    text-align: center;
+    align-items: center;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: underline;
+    display: block;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 10px;
+    font-size: 16px;
+    font-family:Retrochips ;
+    margin-top: 10px;
+}
+
+.menu a:hover {
+    color: #90a0db;
+    transition: 0.5s;
+    padding: 15px;
+    border-radius: 5px;
+}
+.logo{
+    width: 90px;
+    height: 80px;
+    border-radius: 100%;
+    float: left;
+}
+
+nav img{
+    width: 80px;
+    height: 70px;
+    border-radius: 100%;
+    float: right;}
+.ref {
+    text-align: center;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    align-items: center;
+    height: 70px; 
+    background-color: #fff;
+    color: black;
+    padding: 5px;
+    font-family: cantora;
+    margin-top: 150px;
+}
+h2 {
+    font-size: 15px;
+}
+@font-face{
+    font-family: cantora;
+    src: url(/fonts/CantoraOne-Regular.ttf);
+}
+
+video{
+    width: 600px;
+    margin-left: 25%;
+}
+.intro{
+    font-size: 30px;
+    text-align: center;
+}
+.introduccion{
+    font-size: 20px;
+    text-align: justify;
+    text-align:  center;
+}
+.objetivos{
+    font-size:30px ;
+    text-align: center;
+}
+.obj{
+    font-size:20px ;
+    text-align: justify;
+    text-align: center;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #fff;
+    width: 30%;
+    height: 70vh;
+    margin: 10px;
+    border-radius: 10px;
+}
+.container{
+    padding: 12% 20px;
+}
+.title{
+    background: #000000de;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 30px 0;
+    color: #fff;
+}
+p{
+    margin: 0 !important;
+}

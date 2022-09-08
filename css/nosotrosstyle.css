@@ -1,0 +1,173 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-wrap: wrap; 
+    background: #90a0db;
+    margin: 0;
+}
+@font-face{
+    font-family: walter;
+    src: url(/fonts/Philosopher-Regular.ttf);
+}
+@font-face{
+    font-family:Retrochips ;
+    src: url(/fonts/Retrochips.otf);
+}
+.menu{
+    background: black;
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    display: block;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    text-align: center;
+    align-items: center;
+    z-index: 4;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: underline;
+    display: block;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 10px;
+    font-size: 16px;
+    font-family:Retrochips ;
+    margin-top: 10px;
+}
+
+.menu a:hover {
+    color: #90a0db;
+    transition: 0.5s;
+    padding: 15px;
+    border-radius: 5px;
+}
+.logo{
+    width: 90px;
+    height: 80px;
+    border-radius: 100%;
+    float: left;
+}
+.ref {
+    text-align: center;
+    position:absolute;
+    left: 0%;
+    right: 0%;
+    align-items: center;
+    height: 70px; 
+    background-color: #fff;
+    color: black;
+    padding: 5px;
+    font-family: cantora;
+    margin-top: 880px;
+    z-index: -3;
+    margin-top: 1200px;
+    /* min-height: 100px; */
+
+}
+h2 {
+    font-size: 15px;
+}
+@font-face{
+    font-family: cantora;
+    src: url(/fonts/CantoraOne-Regular.ttf);
+}
+nav img{
+    width: 90px;
+    height: 80px;
+    border-radius: 100%;
+    float: right;
+}
+.tar{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    
+}
+.tar .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+    font-family: cantora;
+    
+}
+.tar .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+    
+}
+.tar .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tar .front h3{
+    width: 100%;
+    height: 45px;
+    line-height: 190%;
+    color: white;
+    bottom: 0;
+    background: rgba(0, 0, 0, .4);
+    position: absolute;
+    text-align: center;
+}
+.tar .back{
+    /* Ayuda en la rotación (transform) */
+    transform: perspective(600px) rotateY(180deg); 
+    background: #000;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+    
+}
+.tar .back .link{
+    border-top: solid white;
+    height: 50px;
+    line-height: 50px;
+}
+.tar .back .link i{
+    background-color: #fff;
+    padding: 3px;
+    color: white;
+}
+.tar .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.tar .back p{
+    letter-spacing: 1px;
+    text-align: center;
+}
+/* para que se puedar dar la rotación de las tarjetas */
+.tar:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.tar:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+.link{
+    color: #fff;
+}
+div a{
+    
+    color: #fff;
+}
