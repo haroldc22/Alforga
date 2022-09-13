@@ -24,7 +24,7 @@
         <!-- le dimos un titulo a la pagina -->
         <div id="titulo">
             <span class="titulo1">Alforga</span>
-            <br>
+            
             <span class="titulo2"> "Optimización de alfabetización"</span>
         </div>
         <!-- fin -->
@@ -43,16 +43,16 @@
 
                 <!-- creamos un formulario con la etiqueta fieldset y un form -->
             <td  id="formulario" >
-            <form action=""> 
+            <form id="task-form" > 
             <fieldset>
                 <h1>Ingresar</h1> 
                 <!-- select para seleccionar rol -->
                 <select name="" id="rol"> 
                     <!-- fin -->
-                    <option value="">Rector(a)</option>
-                    <option value=""> Coordinador(a)</option>
-                    <option value="">Estudiante</option>
-                    <option value=""> Docente</option>
+                    <option value="rector">Rector(a)</option>
+                    <option value="coordinador"> Coordinador(a)</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="docente"> Docente</option>
                 </select>
 
                 <!-- Creamos input para registrar datos  -->
@@ -62,7 +62,9 @@
                 <button class="boton" id="btnContinuar">Continuar</button>
                 <p>¿No tienes cuenta? <a href="/pages/registrarse.html" style="text-decoration: none; color: wheat;">Registrate</a></p>
             </td>
-            
+            <div id="Mostrar">
+
+            </div>
             </fieldset>
             <!-- cerramos formulario -->
             </form>
@@ -72,9 +74,10 @@
     <!-- div para que la pagina sea funcional con javascript -->
         <div id="Mostrar">
         </div>
-        <script src="/js/login.js"></script>
+        
+        <script type="module" src="/js/index.js"></script>
 </body>
-<!-- creamos el piel de pagina -->
+<!-- creamos el pie de pagina -->
 <footer class="ref" >
     <h2>Alforga Education ©2022</h2>
     <i >•Carlos Delgado •Yurley Guerra •Yeraldin Castaño •Estefania Muñoz •Harold Castaño  </i>

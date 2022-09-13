@@ -129,8 +129,8 @@ button:hover {
     margin-top: 50px;
 }
 .titulo {
-    color: #fed95c;
-    float: left;
+    color: #fff;
+    
     margin-bottom: 20%;
 }
 #user{
@@ -146,11 +146,13 @@ button:hover {
     font-size: 70px;
     text-align: left;
     font-family:cantora ;
+    margin-bottom: 5%;
 }
 
 .titulo2 { 
     color: white;
     font-family:cantora;
+    margin-top: 5%;
 }
 
 fieldset {
@@ -225,5 +227,10 @@ i {
 table #formulario{
     margin-left: 70%;
     text-align: center;
+}
+
+#Mostrar{
+    margin-top: 7%;
+    color: #fff;
 }
 
