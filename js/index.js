@@ -28,7 +28,7 @@ import {
         const task = doc.data();
   
         tasksContainer.innerHTML += `
-        <div class="card card-body mt-2 border-primary">
+        <div class="card card-body mt-2 border-primary" style="padding: 10px">
       <h3 class="h5">${task.user}</h3>
       <p>${task.password}</p>
       <p>${task.option}</p>
@@ -79,7 +79,6 @@ import {
   
     try {
       if (!editStatus) {
-        console.log(option.value);
         await saveTask(user.value, password.value, option.value);
       } else {
         await updateTask(id, {
