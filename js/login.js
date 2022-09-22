@@ -6,7 +6,7 @@ function inicio(){
 
 function  clickboton(e){
     e.preventDefault();
-   let usuario = document.getElementById('name').value;
+   let usuario = document.getElementById('user').value;
    let mostrarDatos = document.getElementById('Mostrar');
 
    mostrarDatos.innerHTML += "Bienvenido: " + usuario 
