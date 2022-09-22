@@ -1,7 +1,73 @@
-body {background:#90a0db;
-    color: #fff;
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
     
+    background-color: #90a0db;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+}
+
+header{
+    max-width:100%;
+    margin: auto;
+
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    color:  #fed95c;
+    font-size: 2.05em;
+    font-family: Cantora;
+    font-weight: bold;
+
+}
+header .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px ;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: sans-serif;
+}
+
+header a:hover{
+    color: #90a0db;
+    transition: 0.5s;
+    padding: 10px;
+}
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+        margin-bottom: 100px;
     }
+    header .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 25px;
+    }
+    
+}
     /* le damos una fuente para la letra  */
     @font-face{
         font-family: cantora;
@@ -18,75 +84,20 @@ body {background:#90a0db;
     /* finalizamos el tipo de letra que le damos */
     
 /* creamos un diseño para el menu */
-.menu{
-    background: black;
-    padding: 0;
-    width: 100%;
-    height: 60px;
-    margin: auto;
-    display: block;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    text-align: center;
-    align-items: center;
-}
 
-.menu a{
-    color: #fff;
-    text-decoration: underline;
-    display: block;
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px 10px;
-    font-size: 16px;
-    font-family:Retrochips ;
-    margin-top: 10px;
-}
-
-.menu a:hover {
-    color: #90a0db;
-    transition: 0.5s;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-h2 {
-    font-size: 15px;
-}
-.menu p {
-    float: left;
-    color: #fed95c;
-    font-size: 25px;
-}
-
-
-.logo{
-    width: 90px;
-    height: 80px;
-    border-radius: 100%;
-    float: left;
-}
-
-nav img{
-    width: 80px;
-    height: 70px;
-    border-radius: 100%;
-    float: right;}
-img {
+table img {
     width: 400px;
 }
 
-div {
 
-    font-size: 25px;
-    text-align: center;
-}
 table{
-    width: 1000px;
+  padding: 100px 200px 100px;
     font-style: normal;
     font-family: cantora;
-    margin-left: 14%;
+   
+}
+#formulario h1{
+    color: #fed95c;
 }
 td{
     margin-left: 10%;
@@ -121,7 +132,7 @@ button:hover {
     color: black;
     padding: 5px;
     font-family: cantora;
-    margin-top: 150px;
+    
 
 }
 #titulo{
@@ -141,19 +152,7 @@ button:hover {
     margin-bottom: 15px;
 }
 
-.titulo1 {
-    color: #fed95c;
-    font-size: 70px;
-    text-align: left;
-    font-family:cantora ;
-    margin-bottom: 5%;
-}
 
-.titulo2 { 
-    color: white;
-    font-family:cantora;
-    margin-top: 5%;
-}
 
 fieldset {
     background-color: rgb(0, 0, 0);
@@ -163,6 +162,7 @@ fieldset {
 }
 fieldset p{
     font-family: cantora;
+    color: #fff;
 }
 legend {
     font-size: 40px;
@@ -196,36 +196,13 @@ i {
     border-radius: 100%;
     float: left;
 }
-.card{
-    background-color: black;
-    border-radius: 8px;
-    box-shadow: 0 12px 16px black;
-    width: 250px;
-    margin: 20px;
-    display: inline-block;
-    align-items: center;
-    font-family:cantora;
-    cursor: pointer;
-}
 
-.card img{
-    width: 100%;
-    height: 250px;
-    border-radius: 8px;
-}
-.card:hover{
-    background-color:black ;
-}
-.card a{
-    text-decoration: none;
-    color: wheat;
-    font-weight: bold;
-    font-family: cantora;
-}
+
+
 
 
 table #formulario{
-    margin-left: 70%;
+   
     text-align: center;
 }
 
