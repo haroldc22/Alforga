@@ -1,84 +1,62 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alforga</title>
     <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">   
-</head> 
+    <link rel="stylesheet" href="/css/style.css">
+</head>
 <body>
     <header>
-        <!-- creamos el menu -->
-
         <div class="contenedor">
             <p class="logo">Alforga</p>
             <nav>
                 <a href="#">Inicio</a>
                 <a href="/pages/registrarse.html">Registrarse</a>
-                <a href="">Informacion</a>
-                <a href="">Docentes</a>
-                <a href="">Nosotros</a>
+                <a href="/pages/informacion.html">Informacion</a>
+                <a href="/pages/docentes.html">Docentes</a>
+                <a href="/pages/nosotros.html">Nosotros</a>
             </nav>
         </div>
-        <!-- terminamos el menu aca -->
-
-
     </header>
-
-    <!-- colocamos las imagenes en una tabka -->
-    <table class="tabla" > 
-        
-            <!--    centramos las imagenes -->
-            <div class="center">
-                <!-- fin -->
-                <td>
-                    <img href="/" src="/img/logo.png" alt="" class="logoo">
-              <img class="gif" id="gif" src="/img/0bfa5b1e-bca1-482a-8ac4-41585cb4ec9a.gif"/> 
-                </td>
-                <!-- fin -->
-
-                <!-- creamos un formulario con la etiqueta fieldset y un form -->
-            <td  id="formulario" >
-            <form id="task-form" > 
-            <fieldset>
-                <h1>Ingresar</h1> 
-                <!-- select para seleccionar rol -->
-                <select name="" id="rol"> 
-                    <!-- fin -->
-                    <option value="rector">Rector(a)</option>
-                    <option value="coordinador"> Coordinador(a)</option>
-                    <option value="estudiante">Estudiante</option>
-                    <option value="docente"> Docente</option>
-                </select>
-
-                <!-- Creamos input para registrar datos  -->
-                <input id="user" width="100px" type="text" placeholder="👤 Usuario*" required  id="name">
-                <input id="contraseña" type="password" placeholder="🔒 Contraseña*" required  >
-                <!-- creamos boton para registrar y verfificar los datos dados -->
-                <button class="boton" id="btnContinuar">Continuar</button>
-                <p>¿No tienes cuenta? <a href="/pages/registrarse.html" style="text-decoration: none; color: wheat;">Registrate</a></p>
-            </td>
-            <div id="Mostrar">
-
+    
+    <table>
+        <td>
+            <div>
+                
+                <img src="/img/0bfa5b1e-bca1-482a-8ac4-41585cb4ec9a.gif" alt="">
+                <img class="minilogo" src="/img/logo.png" alt="">
             </div>
-            </fieldset>
-            <!-- cerramos formulario -->
-            </form>
-     
-    </div>
+        </td>
+        <td>
+            <div class="formulario">
+                <form action="">
+                    <fieldset>
+                        <h2>Ingresar</h2>
+                        <select name="" id="rol"> 
+                            <option value="roled">Seleccione su Rol</option>
+                            <option value="rector">Rector(a)</option>
+                            <option value="coordinador"> Coordinador(a)</option>
+                            <option value="estudiante">Estudiante</option>
+                            <option value="docente"> Docente</option>
+                        </select>
+                            <input type="text" id="user" placeholder="👤Usuario*" required>
+                            <input type="password" id="contraseña" placeholder="🔒Contraseña*" required>
+                            <button class="boton" id="btnGuardar">Continuar</button>
+                        <p>¿No tienes cuenta?<a href="/pages/registrarse.html">Registrate</a></p>
+                    </fieldset>
+                </form>
+            </div>
+        </td>
     </table>
-    <!-- div para que la pagina sea funcional con javascript -->
-        <div id="Mostrar">
-        </div>
-        
-        <!-- <script type="module" src="/js/index.js"></script> -->
-        <script src="/js/login.js"></script>
+    
+    <div id="Mostrar"></div>
+    <script type="module" src="./js/index.js"></script>
 </body>
-<!-- creamos el pie de pagina -->
-<footer class="ref" >
+<footer class="referencias">
     <h2>Alforga Education ©2022</h2>
     <i >•Carlos Delgado •Yurley Guerra •Yeraldin Castaño •Estefania Muñoz •Harold Castaño  </i>
 </footer>
-</html
+</html>
