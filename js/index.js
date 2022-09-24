@@ -10,7 +10,7 @@ import {
   const user = document.getElementById("user");
   const password = document.getElementById("contraseña");
   const tasksContainer = document.getElementById("Mostrar");
-  const btnContinuar = document.getElementById("btnContinuar");
+  const btnContinuar = document.getElementById("btnGuardar");
   const option = document.getElementById("rol");
 
   let editStatus = false;

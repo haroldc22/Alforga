@@ -36,7 +36,7 @@
                     <fieldset>
                         <h2>Ingresar</h2>
                         <select name="" id="rol"> 
-                            <option value="roled">Seleccione su Rol</option>
+                            <option value="invalid">Seleccione su Rol</option>
                             <option value="rector">Rector(a)</option>
                             <option value="coordinador"> Coordinador(a)</option>
                             <option value="estudiante">Estudiante</option>
@@ -44,7 +44,7 @@
                         </select>
                             <input type="text" id="user" placeholder="👤Usuario*" required>
                             <input type="password" id="contraseña" placeholder="🔒Contraseña*" required>
-                            <button class="boton" id="btnGuardar">Continuar</button>
+                            <a href="/pages/perfil.html"><input class="boton" id="btnGuardar" value="Continuar"></a>
                         <p>¿No tienes cuenta?<a href="/pages/registrarse.html">Registrate</a></p>
                     </fieldset>
                 </form>
@@ -53,7 +53,7 @@
     </table>
     
     <div id="Mostrar"></div>
-    <script type="module" src="./js/index.js"></script>
+    <!-- <script type="module" src="./js/index.js"></script> -->
 </body>
 <footer class="referencias">
     <h2>Alforga Education ©2022</h2>

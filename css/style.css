@@ -116,6 +116,7 @@ select{
     border-radius: 6px;
     border-color: #fff;
     margin-top: 12px;
+    cursor: pointer;
 }
 .formulario p{
     color: #fff;
@@ -127,6 +128,7 @@ select{
     color: rgb(152, 60, 237);
     text-decoration: none;
     padding: 10px;
+    text-decoration: none;
 }
 .minilogo{
     float: right;
