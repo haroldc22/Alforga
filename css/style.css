@@ -29,7 +29,7 @@ header .logo{
     padding: 25px 30px;
     font-weight: bold;
     color:  #fed95c;
-    font-size: 2em;
+    font-size: 2.5em;
     font-family: cantora;
 
 }
@@ -61,7 +61,11 @@ header a:hover{
     header{
         position: fixed;
         width: 100%;
-        margin-bottom: 100px;
+        margin-bottom: 10%;
+        margin-bottom: 200px;
+    }
+    header a{
+        font-size: 1.5em;
     }
     header .contenedor{
         flex-direction: row;
@@ -81,6 +85,7 @@ table{
     text-align: center;
     flex-direction: column;
     padding: 100px 12px;
+
     
 }
 .formulario h2{
