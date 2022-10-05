@@ -6,64 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horas</title>
     <link rel="stylesheet" href="/css/horas.css">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="contenedor">
             <p class="logo">Alforga</p>
             <nav>
-                <a href="/pages/perfilestudiante.html">Volver atras</a>
-                
-                
+                <a href="/pages/perfildocente.html">Volver atras</a>
             </nav>
         </div>
     </header>
-    <!-- <table >
-        <tr>
-            <td class="n">Fecha</td>
-            <td><label>Lorem ipsum dolor sit amet antium voluptas id.</label> </td>
-            <td><label>Lorem ipsum dolor sit amet</label> </td>  
-        </tr>  
-        <tr>
-            <td class="n">Hora de entrada</td>
-            <td><label>Lorem ipsum dolor sit amet</label> </td>
-            <td><label>Lorem ipsum dolor sit amet</label> </td>
-        </tr>
-        <tr>
-            <td class="n">Hora de salida</td>
-            <td><label>Lorem ipsum dolor sit amet</label> </td>
-            <td><label>Lorem ipsum dolor sit amet</label> </td>
-        </tr>
-        <tr>
-            <td class="n">Grado</td>
-            <td><label>asdadsada</label> </td>
-            <td><label>dadsadsad</label> </td>
-        </tr>
+    <br>
+    
 
-        <tr>
-            <td class="n">Descripción</td>
-            <td><label>Lorem ipsum dolor sit ame</label> </td>
-            <td><label>Lorem ipsum dolor sit ame</label> </td>
-        </tr>
+        
+         <form id="task-form"  class="pri">
 
-    </table> -->
-    <br><br>
-    <button id="btnComplet">Llenar Datos</button>
-    <div id="cont">
-        <label >Fecha:</label><div id="name"></div>
-        <label > Hora de Inicio:</label><div id="age"></div>
-        <label >Hora de finalización:</label><div id="city"></div>
-        <label > Actividades realizadas:</label><div id="interes"></div>
-        <select name="" id="">
-            <option value="">Grado</option>
-            <option value="">Preescolar</option>
-            <option value="">Primero</option>
-            <option value="">Segundo</option>
-            <option value="">Tercero</option>
-            <option value="">Cuarto</option>
-            <option value="">Quinto</option>
-        </select>
-    </div>
-    <script src="/js/datos.js"></script>
+            <!-- Input de fecha -->
+            <label >Fecha</label>
+                <input type="date" id="fecha">
+
+                <!-- input de hora inicio -->
+            <label >Hora-Inicio</label>   
+                <input type="time" id="timeInicio" >
+
+                <!-- input hora fin -->
+            <Label>Hora-final</Label>
+                <input type="time" id="timeFinal"> 
+
+                <!-- input docente -->
+            <label>Docente</label>
+                <input type="text" id="docente">
+
+                <!-- input descripcion -->
+            <label>Descripción</label>
+            <textarea rows="3" id="descripcion"></textarea>    
+
+            <!-- boton -->
+                <button id="btnEnviar">Enviar</button>
+    
+        </form>
+
+
+
+
+        
+
+        <!-- finaliza tabla superior -->
+
+       
+            <!-- <label for="">Resultados</label> -->
+            <table class="ta">
+                <tr id="uno">
+                    <th>Fecha</th>
+                    <th>Hora-Inicio</th>
+                    <th>Hora-final</th>
+                    <th>Docente</th>
+                    <th>Descripción</th>
+                </tr>
+            </table>
+
+            <div id="mostrarHoras"></div>
+
+
+
+    <script src="../js/index.js" type="module"></script>
 </body>
 </html>

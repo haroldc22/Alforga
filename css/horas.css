@@ -67,6 +67,7 @@ header a:hover{
         width: 100%;
         margin-bottom: 10%;
         margin-bottom: 200px;
+        z-index: 4;
     }
     header a{
         font-size: 1.5em;
@@ -133,22 +134,17 @@ img {
     width: 400px;
 }
 
-
-
 table{
     width: 600px;
     height: 200px;
     margin-left: 200px;
     margin-top: 100px;
 }
-table td{
-    border: 1px solid black;
-}
 .n{
     background-color: rgb(141, 138, 138);
     text-align: center;
 }
-#cont{
+/* #cont{
     background-color: rgb(0, 0, 0);
     width: 600px;
     height: 200px;
@@ -157,7 +153,7 @@ table td{
     
     justify-content: center;
     align-items: center;
-}
+} */
 /* .cont input{
     margin-bottom: 10px;
     text-align: center;
@@ -166,7 +162,7 @@ table td{
     width: 180px;
     height: 17px;
 } */
-#cont label{
+/* #cont label{
     font-size: 18px;
     display: flex;
     margin-left: 4%;
@@ -189,22 +185,88 @@ table td{
     font-size: 20px;
     margin-left: 4px;
     text-transform: uppercase;
+} */
+
+.ta{
+    height: 50px;
+    margin-top: 300px;
+    width: 925px;
+    margin-left: 240px;
+    padding: 20px;
+    z-index: 2;
+    margin-right: 200px;
+    
 }
 
-button{
-    width: 120px;
-    height: 40px;
-    background-color: blue;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 5%;
-margin-left: 40%;
-border-radius: 6px;}
-select{
-    width: 100px;
-    height: 19px;
-    margin-left: 4%;
-    margin-top: 2%;
+h4{
+    text-align: center;
+}
 
+ #uno {
+    text-align: center;
+    background-color: rgb(84, 107, 212);
+    height: 30px;
+}
+
+
+
+
+.pri{
+    margin-left: 14px;
+    width: 875px;
+    height: 80px;
+    background-color: #ffff;
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    border-radius: 3px;
+    box-shadow:
+    0px 8.7px 5.1px rgba(0, 0, 0, 0.027),
+    0px 15.3px 19.4px rgba(0, 0, 0, 0.039),
+    0px 22.8px 41.1px rgba(0, 0, 0, 0.047),
+    0px 32.2px 68.8px rgba(0, 0, 0, 0.054),
+    0px 45.4px 100.4px rgba(0, 0, 0, 0.061),
+    0px 82px 124px rgba(0, 0, 0, 0.07);
+}
+.pri label{
+    position: absolute;
+    margin-left: 22px;
+    margin-top: 15px;
+}
+#input{
+    margin-top: 30px;
+    height: 25px;
+    margin-right: 00px;
+}
+.pri button{
+    margin-left: 10px;
+    background-color:#009cde ;
+    width: 70px;
+    height: 29px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.pri input, textarea{
+    height: 21px;
+    margin-top: 36px;
+    margin-left: 10px;
+}
+
+.pri a{
+    color: #009cde;
+    font-size: 14px;
+    margin-left: 4px;
+}
+.ta td{
+    background-color: #fff;
+    height: 20px;
+    width: 925px;
+    margin-left: 240px;
+    padding: 8px;
+    z-index: 2;
+    margin-right: 200px;
+        
+    
 }
