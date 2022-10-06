@@ -83,119 +83,29 @@ header a:hover{
     }
     
 }
-.menu{
-    background: black;
-    padding: 0;
-    width: 100%;
-    height: 60px;
-    margin: auto;
-    display: block;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    text-align: center;
-    align-items: center;
-}
-
-.menu a{
-    color: #fff;
-    text-decoration: underline;
-    display: block;
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px 10px;
-    font-size: 16px;
-    font-family:Retrochips ;
-    margin-top: 10px;
-}
-
-.menu a:hover {
-    color: #90a0db;
-    transition: 0.5s;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-h2 {
-    font-size: 15px;
-}
-.menu p {
-    float: left;
-    color: #fed95c;
-    font-size: 25px;
-}
-
-nav img{
-    width: 80px;
-    height: 70px;
-    border-radius: 100%;
-    float: right;}
-img {
-    width: 400px;
-}
-
 table{
     width: 600px;
-    height: 200px;
+    
     margin-left: 200px;
-    margin-top: 100px;
+    margin-top: 300px;
 }
 .n{
     background-color: rgb(141, 138, 138);
     text-align: center;
 }
-/* #cont{
-    background-color: rgb(0, 0, 0);
-    width: 600px;
-    height: 200px;
-    border-radius: 8px;
-    margin-left: 25%;
-    
-    justify-content: center;
-    align-items: center;
-} */
-/* .cont input{
-    margin-bottom: 10px;
-    text-align: center;
-    margin-left: 50px;
-    border-radius: 7px;
-    width: 180px;
-    height: 17px;
-} */
-/* #cont label{
-    font-size: 18px;
-    display: flex;
-    margin-left: 4%;
-    margin-top: 2%;
-
-    text-align: center;
-    font-weight: bold;
-    font-family: sans-serif;
-    color: #fff;
-}
-#cont button{
-    margin-left: 32%;
-    margin-bottom: 15px;
-}
-
-#cont div{
-    color: #fff;
-    align-items: center;
-    font-weight: 200;
-    font-size: 20px;
-    margin-left: 4px;
-    text-transform: uppercase;
-} */
-
 .ta{
     height: 50px;
-    margin-top: 300px;
+    
     width: 925px;
     margin-left: 240px;
     padding: 20px;
     z-index: 2;
     margin-right: 200px;
     
+}
+td{
+    background-color: #fff;
+    width: 100px;
 }
 
 h4{
@@ -259,14 +169,4 @@ h4{
     font-size: 14px;
     margin-left: 4px;
 }
-.ta td{
-    background-color: #fff;
-    height: 20px;
-    width: 925px;
-    margin-left: 240px;
-    padding: 8px;
-    z-index: 2;
-    margin-right: 200px;
-        
-    
-}
+

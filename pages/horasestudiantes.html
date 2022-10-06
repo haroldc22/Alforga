@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
         <div class="contenedor">
             <p class="logo">Alforga</p>
             <nav>
-                <a href="/pages/perfildocente.html">Volver atras</a>
+                <a href="/pages/perfilestudiante.html">Volver atras</a>
             </nav>
         </div>
     </header>
@@ -21,36 +21,20 @@
     
 
         
-         <form id="task-form"  class="pri">
-
-            <!-- Input de fecha -->
-            <label >Fecha</label>
+        <section class="pri">
+            <label for="">Fecha</label>
                 <input type="date" id="fecha">
-
-                <!-- input de hora inicio -->
-            <label >Hora-Inicio</label>   
-                <input type="time" id="timeInicio" >
-
-                <!-- input hora fin -->
+            <label for="">Hora-Inicio</label>   
+                <input type="time" timeInicio>
             <Label>Hora-final</Label>
                 <input type="time" id="timeFinal"> 
-
-                <!-- input docente -->
             <label>Docente</label>
                 <input type="text" id="docente">
-
-                <!-- input descripcion -->
             <label>Descripción</label>
             <textarea rows="3" id="descripcion"></textarea>    
-
-            <!-- boton -->
                 <button id="btnEnviar">Enviar</button>
     
-        </form>
-
-
-
-
+        </section>
         
 
         <!-- finaliza tabla superior -->
@@ -66,11 +50,7 @@
                     <th>Descripción</th>
                 </tr>
             </table>
-
-            <div id="mostrarHoras"></div>
-
-
-
-    <script src="../js/index.js" type="module"></script>
+            <div id="MostrarHoras"></div>
+    <script src="/js/index.js"></script>
 </body>
 </html>
