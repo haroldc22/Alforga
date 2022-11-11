@@ -22,19 +22,15 @@ import {
         const task = doc.data();
         console.log(task.docente);
         MostrarHoras.innerHTML += `
-      <table class="ta">
-        <td class="fecha" >${task.fecha}</td>
-        <td class="tInicio">${task.timeInicio}</td>
-        <td class="tFinal">${task.timeFinal}</td>
-        <td class="docente">${task.docente}</td>
-        <td class="descript">${task.descripcion}</td> 
-      <div class="botones">
-      <div id="borrar">
-      
-      <div id="editar">
-        
-      </div>
-      </div>`;
+      <table class = "info">
+        <tr id="cabecera-tabla">
+          <td >${task.fecha}</td>
+          <td >${task.timeInicio}</td>
+          <td >${task.timeFinal}</td>
+          <td >${task.docente}</td>
+          <td >${task.descripcion}</td>
+        </tr> 
+      </table>`;
       });
       const btnsDelete = MostrarHoras.querySelectorAll(".delete");
       btnsDelete.forEach((btn) =>

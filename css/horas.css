@@ -18,14 +18,12 @@ body{
     font-family: cantora;
     src: url(/fonts/CantoraOne-Regular.ttf);
 }
+
+/* Cabecera */
 header {
     background-color: rgb(0, 0, 0);
-}
-
-header{
     max-width:1400px;
     margin: auto;
-
 }
 
 header .logo{
@@ -83,36 +81,44 @@ header a:hover{
     }
     
 }
-table{
+
+/* cabecera de la tabla */
+.ta{
     width: 600px;
-    
-    margin-left: 200px;
-    margin-top: 300px;
+    margin-top: 200px;
+    height: 50px;
+    width: 905px;
+    margin-left: 240px;
+    padding: 20px;
+    margin-right: 200px;
 }
 .n{
     background-color: rgb(141, 138, 138);
     text-align: center;
 }
-.ta{
-    height: 50px;
-    
-    width: 925px;
-    margin-left: 240px;
-    padding: 20px;
-    z-index: 2;
-    margin-right: 200px;
-    
-}
+
+/* Info de la DB firebase */
 td{
     background-color: #fff;
     width: 100px;
+    padding: 20px;
+    margin-right: 200px;
+    height: 20px;
+} 
+
+.info{
+    width: 905px;
+    margin-left: 240px;
+    margin-right: 100px;
 }
+/* Info de la DB firebase */
 
 h4{
     text-align: center;
 }
 
- #uno {
+/* cabecera tabla */
+ #cabecera-tabla {
     text-align: center;
     background-color: rgb(84, 107, 212);
     height: 30px;
