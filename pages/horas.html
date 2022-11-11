@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas</title>
+    <link rel="stylesheet" href="/css/horas.css">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <p class="logo">Alforga</p>
+            <nav>
+                <a href="/pages/perfildocente.html">Volver atras</a>
+            </nav>
+        </div>
+    </header>
+    <br>
+    
+
+        
+         <form id="task-form"  class="pri">
+
+            <!-- Input de fecha -->
+            <label >Fecha</label>
+                <input type="date" id="fecha">
+
+                <!-- input de hora inicio -->
+            <label >Hora-Inicio</label>   
+                <input type="time" id="timeInicio" >
+
+                <!-- input hora fin -->
+            <Label>Hora-final</Label>
+                <input type="time" id="timeFinal"> 
+
+                <!-- input docente -->
+            <label>Docente</label>
+                <input type="text" id="docente">
+
+                <!-- input descripcion -->
+            <label>Descripción</label>
+            <textarea rows="3" id="descripcion"></textarea>    
+
+            <!-- boton -->
+                <button id="btnEnviar">Enviar</button>
+    
+        </form>
+
+
+
+
+        
+
+        <!-- finaliza tabla superior -->
+
+       
+            <!-- <label for="">Resultados</label> -->
+            <table class="ta">
+                <tr id="uno">
+                    <th>Fecha</th>
+                    <th>Hora-Inicio</th>
+                    <th>Hora-final</th>
+                    <th>Docente</th>
+                    <th>Descripción</th>
+                </tr>
+            </table>
+
+            <div id="mostrarHoras"></div>
+
+
+
+    <script src="../js/index.js" type="module"></script>
+</body>
+</html>

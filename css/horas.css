@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+}
+/* creamos un diseño para el menu */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    
+    background-color: #90a0db;
+}
+@font-face{
+    font-family: letra1;
+    src: url(/fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
+}
+@font-face{
+    font-family: cantora;
+    src: url(/fonts/CantoraOne-Regular.ttf);
+}
+header {
+    background-color: rgb(0, 0, 0);
+}
+
+header{
+    max-width:1400px;
+    margin: auto;
+
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:  #fed95c;
+    font-size: 2.5em;
+    font-family: cantora;
+
+}
+header .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px ;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-family: letra1;
+}
+
+header a:hover{
+    color: #90a0db;
+    transition: 0.5s;
+    padding: 10px;
+}
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+        margin-bottom: 10%;
+        margin-bottom: 200px;
+        z-index: 4;
+    }
+    header a{
+        font-size: 1.5em;
+    }
+    header .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 25px;
+    }
+    
+}
+table{
+    width: 600px;
+    
+    margin-left: 200px;
+    margin-top: 300px;
+}
+.n{
+    background-color: rgb(141, 138, 138);
+    text-align: center;
+}
+.ta{
+    height: 50px;
+    
+    width: 925px;
+    margin-left: 240px;
+    padding: 20px;
+    z-index: 2;
+    margin-right: 200px;
+    
+}
+td{
+    background-color: #fff;
+    width: 100px;
+}
+
+h4{
+    text-align: center;
+}
+
+ #uno {
+    text-align: center;
+    background-color: rgb(84, 107, 212);
+    height: 30px;
+}
+
+
+
+
+.pri{
+    margin-left: 14px;
+    width: 875px;
+    height: 80px;
+    background-color: #ffff;
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    border-radius: 3px;
+    box-shadow:
+    0px 8.7px 5.1px rgba(0, 0, 0, 0.027),
+    0px 15.3px 19.4px rgba(0, 0, 0, 0.039),
+    0px 22.8px 41.1px rgba(0, 0, 0, 0.047),
+    0px 32.2px 68.8px rgba(0, 0, 0, 0.054),
+    0px 45.4px 100.4px rgba(0, 0, 0, 0.061),
+    0px 82px 124px rgba(0, 0, 0, 0.07);
+}
+.pri label{
+    position: absolute;
+    margin-left: 22px;
+    margin-top: 15px;
+}
+#input{
+    margin-top: 30px;
+    height: 25px;
+    margin-right: 00px;
+}
+.pri button{
+    margin-left: 10px;
+    background-color:#009cde ;
+    width: 70px;
+    height: 29px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.pri input, textarea{
+    height: 21px;
+    margin-top: 36px;
+    margin-left: 10px;
+}
+
+.pri a{
+    color: #009cde;
+    font-size: 14px;
+    margin-left: 4px;
+}
+
