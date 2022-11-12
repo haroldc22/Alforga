@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse Alforga</title>
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style register.css">
+</head>
+
+<body >    
+    <header>
+        <div class="contenedor">
+            <p class="logo">Alforga</p>
+            <nav>
+                <a href="/index.html">Inicio</a>
+                <a href="/pages/registrarse.html">Registrarse</a>
+                <a href="/pages/informacion.html">Informacion</a>
+                <a href="/pages/nosotros.html">Nosotros</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Formulario de inicio de sesion -->
+    <table>
+        <td>
+            <form action="">
+                <h1> Registrarse</h1> 
+                <input id="user" type="text" placeholder="Nombres">
+                
+                <input id="apellido" type="text" placeholder="Apellidos" id="txtApellidos">
+                
+                <input id="Grado" width="50px" type="text" placeholder="Grado" id="txtGrado">
+                <h3 id="info"><p>Su Usuario y contraseña seran su documento. </p></h3>
+            </td>
+            <td>
+                
+                    <select name="" id="rol"> 
+                        <option value="">Tipo de documento</option>
+                        <option value=""> Cedula de ciudadania</option>
+                        <option value="">Tarjeta de identidad</option>
+                        <option value=""> Veneco</option>
+                    </select>
+                        
+                        <input id="numDocument" type="text" placeholder="Numero de documento" id="txtDocumento">
+                        
+                        <input id="contra" type="password" placeholder="🔒 Contraseña" id="txtContra">
+                        <h4><small> Ya tienes una cuenta?<a href="/index.html">Inicia Sesión</a> </small></h4>
+                        <button class="boton" id="btnGuardar">Continuar</button>
+                </td>
+              
+            </form>
+
+    </table>
+
+    
+
+<div id="Mostrar">
+
+</div>
+<script type="module" src="/js/index.js"></script>
+
+</body>
+<footer class="pie-pagina">
+    <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a href="#">
+            <img src="/img/logo.png" >
+          </a>
+        </figure>
+      </div>
+      <div class="box">
+        <h2>QUIENES SOMOS</h2>
+        <p>•Carlos Delgado <br>
+            •Yurley Guerra <br>
+            •Yeraldin Castaño <br>
+            •Estefania Muñoz <br>
+             •Harold Castaño</p>
+      </div>
+      <div class="box">
+        <h2>SIGUENOS</h2>
+        <div class="red-social">
+          <a href="#" class="fa fa-whatsapp"><img src="/img/whatsapp.png" alt="" width="30px"></a>
+          <a href="#" class="fa fa-instagram"><img src="/img/instagram.png" alt="" width="30px"></a>
+          <a href="#" class="fa fa-gmail"><img src="/img/gmail.png" alt="" width="30px"></a>
+        </div>
+      </div>
+    </div>
+    <div class="grupo-2">
+      <small>&copy; 2021 <b>Alforga</b> - Todos los Derechos Reservados.</small>
+    </div>
+  </footer>
+</html>
