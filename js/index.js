@@ -1,101 +1,38 @@
-import {
-    onGetTasks,
-    saveTask,
-    deleteTask,
-    getTask,
-    updateTask,
-    getTasks,
-  } from "./firebase.js";
-  
-  const taskForm = document.getElementById("task-form");
-  const MostrarHoras = document.getElementById("mostrarHoras");
-  const btnContinuar = document.getElementById("btnEnviar");
-  
+import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js"
+import { auth, saveTask } from "./firebase.js";
 
-  let editStatus = false;
-  let id = "";
-  window.addEventListener("DOMContentLoaded", async (e) => {
-    onGetTasks((querySnapshot) => {
-      MostrarHoras.innerHTML = "";
-  
-      querySnapshot.forEach((doc) => {
-        const task = doc.data();
-        console.log(task.docente);
-        MostrarHoras.innerHTML += `
-      <table class = "info">
-        <tr id="cabecera-tabla">
-          <td >${task.fecha}</td>
-          <td >${task.timeInicio}</td>
-          <td >${task.timeFinal}</td>
-          <td >${task.docente}</td>
-          <td >${task.descripcion}</td>
-        </tr> 
-      </table>`;
-      });
-      const btnsDelete = MostrarHoras.querySelectorAll(".delete");
-      btnsDelete.forEach((btn) =>
-        btn.addEventListener("click", async ({ target: { dataset } }) => {
-          try {
-            await deleteTask(dataset.id);
-          } catch (error) {
-            
-          }
-        })
-      );
-  
-      const btnsEdit = MostrarHoras.querySelectorAll("edit");
-      btnsEdit.forEach((btn) => {
-        btn.addEventListener("click", async (e) => {
-          try {
-            const doc = await getTask(e.target.dataset.id);
-            const task = doc.data();
-            taskForm["task.fecha"].value = task.fecha;
-            taskForm["task.timeInicio"].value = task.timeInicio;
-            taskForm["task.timeFinal"].value = task.timeFinal;
-            taskForm["task.docente"].value = task.docente;
-            taskForm["task.descripcion"].value = task.descripcion;
-  
-            editStatus = true;
-            id = doc.id;
-            taskForm["btn-task-form"].innerText = "Update";
-          } catch (error) {
-            
-          }
-        });
-      });
-    });
-  });
-  
-  btnContinuar.addEventListener("click", async (e) => {
-    e.preventDefault();
-    alert(3)
-    const fecha = taskForm["fecha"]
-    const timeInicio = taskForm["timeInicio"]
-    const timeFinal = taskForm["timeFinal"]
-    const docente = taskForm["docente"]
-    const descripcion = taskForm["descripcion"]
-  
-    try {
-      if (!editStatus) {
-        console.log(fecha.value, timeInicio.value, timeFinal.value, docente.value, descripcion.value);
-        await saveTask(fecha.value, timeInicio.value, timeFinal.value, docente.value, descripcion.value);
-      } else {
-        await updateTask(id, {
-          fecha: fecha.value,
-          timeInicio: timeInicio.value,
-          timeFinal: timeFinal.value,
-          docente: docente.value,
-          descripcion: descripcion.value
-        });
-  
-        editStatus = false;
-        id = "";
-        taskForm["btn-task-form"].innerText = "Guardar";
-      }
-  
-      taskForm.reset();
-    } catch (error) {
-      console.log(error);
+const taskForm = document.getElementById("task-form");
+const MostrarHoras = document.getElementById("Mostrar");
+const btnContinuar = document.getElementById("btnGuardar");
+
+let editStatus = false;
+let id = "";
+window.addEventListener("DOMContentLoaded", async (e) => {
+
+btnContinuar.addEventListener("click", async (e) => {
+  e.preventDefault();
+  const nombre = taskForm["user"]
+  const gmail = taskForm["email"]
+  const apellido = taskForm["apellido"]
+  const grado = taskForm['Grado']
+  const ti = taskForm["id"]
+  const contraseña = taskForm["contra"]
+  try {
+    if (!editStatus) {
+      await saveTask(nombre.value, apellido.value, gmail.value, grado.value, ti.value);
+      const userCredential = await createUserWithEmailAndPassword(auth, gmail.value, contraseña.value)
+      .then((usersCredential)=>{
+        alert("Usuario Registrado")
+      })
+      console.log(userCredential)
+      editStatus = false;
+      id = "";
+      taskForm["btn-task-form"].innerText = "Guardar";
     }
-  });
-  
+
+    taskForm.reset();
+  } catch (error) {
+    console.log(error);
+  }
+});
+});

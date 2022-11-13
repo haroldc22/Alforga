@@ -24,17 +24,17 @@
     <!-- Formulario de inicio de sesion -->
     <table>
         <td>
-            <form action="">
+            <form action="" id="task-form">
                 <h1> Registrarse</h1> 
                 <input id="user" type="text" placeholder="Nombres">
-                
+                <input type="text" placeholder="email" id="email" style="margin-left: 15px;">
                 <input id="apellido" type="text" placeholder="Apellidos" id="txtApellidos">
                 
                 <input id="Grado" width="50px" type="text" placeholder="Grado" id="txtGrado">
                 <h3 id="info"><p>Su Usuario y contraseña seran su documento. </p></h3>
             </td>
             <td>
-                <br><br><br><br><br>
+                
                     <select name="" id="rol"> 
                         <option value="">Tipo de documento</option>
                         <option value=""> Cedula de ciudadania</option>
@@ -42,7 +42,7 @@
                         <option value=""> Veneco</option>
                     </select>
                         
-                        <input id="numDocument" type="text" placeholder="Numero de documento" id="txtDocumento">
+                        <input id="id" type="text" placeholder="Numero de documento" id="txtDocumento">
                         
                         <input id="contra" type="password" placeholder="🔒 Contraseña" id="txtContra">
                         <h4><small> Ya tienes una cuenta?<a href="/index.html">Inicia Sesión</a> </small></h4>
@@ -58,11 +58,8 @@
 <div id="Mostrar">
 
 </div>
-<script type="module" src="/js/index.js"></script>
+<script src="/js/index.js" type="module"></script>
 
 </body>
-<footer class="referencias">
-  <h2>Alforga Education ©2022</h2>
-  <i >•Carlos Delgado •Yurley Guerra •Yeraldin Castaño •Estefania Muñoz •Harold Castaño  </i>
-</footer>
+
 </html>

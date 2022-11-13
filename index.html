@@ -7,8 +7,6 @@
     <title>Alforga</title>
     <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
     <header>
@@ -18,6 +16,7 @@
                 <a href="#">Inicio</a>
                 <a href="/pages/registrarse.html">Registrarse</a>
                 <a href="/pages/informacion.html">Informacion</a>
+                <a href="/pages/docentes.html">Docentes</a>
                 <a href="/pages/nosotros.html">Nosotros</a>
             </nav>
         </div>
@@ -36,16 +35,10 @@
                 <form action="">
                     <fieldset>
                         <h2>Ingresar</h2>
-                        <select name="" id="rol"> 
-                            <option value="invalid">Seleccione su Rol</option>
-                            <option value="rector">Rector(a)</option>
-                            <option value="coordinador"> Coordinador(a)</option>
-                            <option value="estudiante">Estudiante</option>
-                            <option value="docente"> Docente</option>
-                        </select>
-                            <input type="text" id="user" placeholder="👤Usuario*" required>
+                        
+                            <input type="email" id="user" placeholder="👤Email*" required>
                             <input type="password" id="contraseña" placeholder="🔒Contraseña*" required>
-                            <a href="/pages/perfildocente.html" href="/pages/perfildocente.html"><input class="boton" id="btnGuardar" value="Continuar"></a>
+                            <input class="boton" id="btnContinuar" value="Continuar">
                         <p>¿No tienes cuenta?<a href="/pages/registrarse.html">Registrate</a></p>
                     </fieldset>
                 </form>
@@ -54,10 +47,35 @@
     </table>
     
     <div id="Mostrar"></div>
-    <!-- <script type="module" src="./js/index.js"></script> -->
+    <script src="./js/login.js" type="module"></script>
 </body>
-<footer class="referencias">
-  <h2>Alforga Education ©2022</h2>
-  <i >•Carlos Delgado •Yurley Guerra •Yeraldin Castaño •Estefania Muñoz •Harold Castaño  </i>
+<footer class="pie-pagina">
+  <div class="grupo-1">
+    <div class="box">
+      <figure>
+        <a href="#">
+          <img src="/img/logo.jpeg" >
+        </a>
+      </figure>
+    </div>
+    <div class="box">
+      <h2>¿QUIENES SOMOS?</h2>
+      <p>•Carlos Delgado <br>
+          •Yurley Guerra <br>
+          •Yeraldin Castaño <br>
+          •Estefania Muñoz <br>
+          •Harold Castaño</p>
+    </div>
+    <div class="box">
+      <h2>CONTACTANOS</h2>
+      <div class="red-social">
+
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvpbDTXjPBNsjTdsSnqTLtrwvgbkpHkKQmJPbSkHXjjJBjdNJZdHMWzpZcXrVDbVhxVfdV" class="fa fa-gmail"><img src="/img/gmail.png" alt="" width="30px"></a>
+      </div>
+    </div>
+  </div>
+  <div class="grupo-2">
+    <small>&copy; 2022 <b>Alforga</b> - Derechos Reservados a la Institucion Educativa Republica De Honduras.</small>
+  </div>
 </footer>
 </html>
