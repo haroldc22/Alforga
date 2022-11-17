@@ -7,7 +7,7 @@ window.onload = () =>{
     let mostrarDatos = document.getElementById('Mostrar');
     let boton = document.getElementById('btnContinuar')
     let rol = document.getElementById('rol')
-
+    alert(rol.value)
     boton.addEventListener("click", async(e)=>{
         e.preventDefault()
         const userCredentials = await signInWithEmailAndPassword(auth, email.value, password.value)
@@ -21,8 +21,11 @@ window.onload = () =>{
                         document.cookie = `email=${doc.data().gmail};`;
                         document.cookie = `grado=${doc.data().grado};`;
                         document.cookie = `ti=${doc.data().ti};`;
-                       
-                        window.location.href = "/pages/perfildocente.html"
+                        alert(rol.value)
+                       if(rol.value == "docente")
+                            window.location.href = "/pages/perfildocente.html"
+                        else if(rol.value == "estudiante")
+                            window.location.href = "/pages/perfilestudiante.html"
                         
                     }
                 })

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,24 +17,10 @@
             </nav>
         </div>
     </header>
-    <br>
-    
+<br>
 
-        
-        <section class="pri">
-            <label for="">Fecha</label>
-                <input type="date" id="fecha">
-            <label for="">Hora-Inicio</label>   
-                <input type="time" timeInicio>
-            <Label>Hora-final</Label>
-                <input type="time" id="timeFinal"> 
-            <label>Docente</label>
-                <input type="text" id="docente">
-            <label>Descripción</label>
-            <textarea rows="3" id="descripcion"></textarea>    
-                <button id="btnEnviar">Enviar</button>
-    
-        </section>
+
+
         
 
         <!-- finaliza tabla superior -->
@@ -42,7 +28,7 @@
        
             <!-- <label for="">Resultados</label> -->
             <table class="ta">
-                <tr id="uno">
+                <tr id="cabecera-tabla">
                     <th>Fecha</th>
                     <th>Hora-Inicio</th>
                     <th>Hora-final</th>
@@ -50,7 +36,8 @@
                     <th>Descripción</th>
                 </tr>
             </table>
-            <div id="MostrarHoras"></div>
-    <script src="/js/index.js"></script>
+
+            <div id="mostrarHoras"></div>
+    <script src="../js/horas.js" type="module"></script>
 </body>
 </html>

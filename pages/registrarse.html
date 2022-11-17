@@ -26,26 +26,27 @@
         <td>
             <form action="" id="task-form">
                 <h1> Registrarse</h1> 
-                <input id="user" type="text" placeholder="Nombres">
-                <input type="text" placeholder="email" id="email" style="margin-left: 15px;">
-                <input id="apellido" type="text" placeholder="Apellidos" id="txtApellidos">
+                <input id="user" type="text" placeholder="Nombres*">
+                <input type="text" placeholder="Email*" id="email" style="margin-left: 15px;">
+                <input id="apellido" type="text" placeholder="Apellidos*" id="txtApellidos">
                 
-                <input id="Grado" width="50px" type="text" placeholder="Grado" id="txtGrado">
-                <h3 id="info"><p>Su Usuario y contraseña seran su documento. </p></h3>
+                
+                <h4><small> Ya tienes una cuenta?<a href="/index.html">Inicia Sesión</a> </small></h4>
             </td>
             <td>
-                
+                <br><br><br>
+                <input id="Grado*"  type="number" placeholder="Grado" id="txtGrado">
                     <select name="" id="rol"> 
                         <option value="">Tipo de documento</option>
                         <option value=""> Cedula de ciudadania</option>
                         <option value="">Tarjeta de identidad</option>
-                        <option value=""> Veneco</option>
+                       
                     </select>
                         
-                        <input id="id" type="text" placeholder="Numero de documento" id="txtDocumento">
+                        <input id="id" id="numDocument" type="text" placeholder="Numero de documento*" id="txtDocumento">
                         
-                        <input id="contra" type="password" placeholder="🔒 Contraseña" id="txtContra">
-                        <h4><small> Ya tienes una cuenta?<a href="/index.html">Inicia Sesión</a> </small></h4>
+                        <input id="contra" type="password" placeholder="🔒 Contraseña*" id="txtContra">
+                        
                         <button class="boton" id="btnGuardar">Continuar</button>
                 </td>
               

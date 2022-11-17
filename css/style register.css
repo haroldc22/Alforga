@@ -5,9 +5,10 @@ table{
     background-color: rgb(0, 0, 0);
     border-radius: 15px;
     border-color: #fff;
-    width: 580px;
+    width: 540px;
     margin-left: 400px;
     margin-top: 18%;
+    height: 250px;
 }
 *{
     box-sizing: border-box;
@@ -117,25 +118,21 @@ input {
     width: 200px;
     height: 25px;
 }
-button{
-    width: 130px;
-    height: 35px;
-    font-size: 15px;
-    cursor: pointer;
-}
+
 .boton {
     background-color: blue;
-    width: 200px;
-    height: 40px;
-    font-size: 20px;
+    width: 150px;
+    height: 20px;
+    font-size: 15px;
     color: white;
     border-radius: 6px;
     border-color: #90a0db;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 button:hover {
-    box-shadow: 0 10px 10px 0 rgba(253, 253, 253, 0.658), 0 10px 10px 0 rgba(255, 255, 255, 0.69)
+    box-shadow: 0 6px 6px 0 rgba(253, 253, 253, 0.658), 0 6px 6px 0 rgba(255, 255, 255, 0.69)
 }
 
 fieldset {
@@ -196,20 +193,20 @@ h2 {
     margin-left: 15px;
 }
 #Grado{
-    margin-top: 6px;
-    margin-bottom: 5px;
-    margin-left: 15px;
+   width: 100px;
+    /* margin-top: 6px;
+    width: 80px;
+    margin-left: 9px;
+    margin-bottom: 10px; */
 }
 #documento{
     margin-top: 8px;
     margin-bottom: 8px;
 }
-#numDocument{
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
+
 #rol{
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 #contra{
     margin-top: 8px;

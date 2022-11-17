@@ -156,6 +156,7 @@ p{
     grid-template-columns: repeat(3, 1fr);
     grid-gap:50px;
     padding: 45px 0px;
+    font-family: cantora;
 }
 .pie-pagina .grupo-1 .box figure{
     width: 100%;
